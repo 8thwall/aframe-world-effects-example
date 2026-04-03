@@ -85,6 +85,14 @@ const config = {
       inject: false,
     }),
     new CopyWebpackPlugin({
+  patterns: [
+    {
+      from: 'node_modules/@8thwall/engine/dist',
+      to: 'external/xr',
+    }
+  ]
+}),
+    new CopyWebpackPlugin({
       patterns: [
         {
           from: path.join(rootPath, 'external'),
