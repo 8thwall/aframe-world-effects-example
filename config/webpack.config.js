@@ -92,6 +92,14 @@ const config = {
           noErrorOnMissing: true,
         },
         {
+          from: path.join(rootPath, 'node_modules/@8thwall/engine-binary/dist'),
+          to: 'external/xr',
+        },
+        {
+          from: path.join(rootPath, 'node_modules/@8thwall/xrextras/dist'),
+          to: 'external/xrextras',
+        },
+        {
           from: path.join(srcPath, 'assets'),
           to: path.join(distPath, 'assets'),
           noErrorOnMissing: true,

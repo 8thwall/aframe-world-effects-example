@@ -28,5 +28,9 @@
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.2.2"
+  },
+  "dependencies": {
+    "@8thwall/engine-binary": "^1.0.0-alpha.3",
+    "@8thwall/xrextras": "^1.0.0-alpha.4"
   }
 }
