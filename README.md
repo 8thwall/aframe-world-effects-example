@@ -3,7 +3,15 @@
 This example allows the user to grow cacti 🌵  by tapping or clicking the ground. Showcases raycasting,
 spawning new objects, and importing a 3D model.
 
-![](./src/assets/preview.gif)
+![Cacti sprouting from the ground, in augmented reality, desktop 3D, and virtual reality](./src/assets/preview.gif)
+
+<details><summary>Try it out</summary>
+
+https://8thwall.org/aframe-world-effects-example/
+
+<img alt="QR Code for the preview link" src="https://8th.io/qr?v=2&url=https://8thwall.org/aframe-world-effects-example/" width=250 height=250 />
+
+</details>
 
 ## Usage
 
@@ -13,6 +21,10 @@ spawning new objects, and importing a 3D model.
 4. `npm run serve`
 5. To connect to a mobile device, follow [these instructions](https://8th.io/test-on-mobile)
 6. Recommended: Track your files using [git](https://git-scm.com/about) to avoid losing progress
+
+## Deployment
+
+This project contains Github Actions configuration for deployment to Github Pages, which triggers automatically by pushing the `main` branch. You can also create a production build using `npm run build`, which outputs the production build to the `dist` folder, and publish to the web using [this guide](https://8thwall.org/docs/getting-started/publishing#self-hosting-your-project).
 
 ## Questions?
 
