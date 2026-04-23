@@ -3,7 +3,7 @@
 This example allows the user to grow cacti 🌵  by tapping or clicking the ground. Showcases raycasting,
 spawning new objects, and importing a 3D model.
 
-![Cacti sprouting from the ground, in augmented reality, virtual reality](./src/assets/preview.gif)
+![Cacti sprouting from the ground, in augmented reality, desktop 3D, and virtual reality](./src/assets/preview.gif)
 
 <details><summary>Try it out</summary>
 
@@ -24,7 +24,7 @@ https://8thwall.org/aframe-world-effects-example/
 
 ## Deployment
 
-This project contains Github Actions configuration for deployment to Github Pages, which triggers automatically by pushing the `main` branch. You can also follow the publishing instructions here: https://8thwall.org/docs/getting-started/publishing to publish to any other web host.
+This project contains Github Actions configuration for deployment to Github Pages, which triggers automatically by pushing the `main` branch. You can also create a production build using `npm run build` and publish using [this guide](https://8thwall.org/docs/getting-started/publishing#self-hosting-your-project).
 
 ## Questions?
 
