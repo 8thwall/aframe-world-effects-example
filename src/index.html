@@ -15,9 +15,11 @@
   <meta property="og:description" content="This example allows the user to grow cacti 🌵  by tapping or clicking the ground. Showcases raycasting, spawning objects, and importing a 3D model.">
   <meta name="twitter:description" content="This example allows the user to grow cacti 🌵  by tapping or clicking the ground. Showcases raycasting, spawning objects, and importing a 3D model.">
   <script crossorigin="anonymous" src="./external/scripts/8frame-1.5.0.min.js"></script>
-  <script crossorigin="anonymous" src="./external/xrextras/xrextras.js"></script>
+  <!-- <script crossorigin="anonymous" src="./external/xrextras/xrextras.js"></script> -->
+   <!-- <script src="https://cdn.jsdelivr.net/npm/@8thwall/landing-page@1.0.0-alpha.1/dist/landing-page.js" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@8thwall/xrextras@1.0.0-alpha.4/dist/xrextras.js" crossorigin="anonymous"></script>
   <script crossorigin="anonymous" src="./external/landing-page/landing-page.js"></script>
-  <script crossorigin="anonymous" src="./external/xr/xr.js" async="true" data-preload-chunks="slam">
+  <script src="https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@1.0.0-alpha.3/dist/xr.js" async crossorigin="anonymous" data-preload-chunks="slam"></script>
   </script>
 
 <!-- Copyright (c) 2024 8th Wall, Inc. -->
@@ -29,7 +31,6 @@
 <meta name="8thwall:package" content="@8thwall.landing-page"/>
 
 <!-- Add GIF for sharing -->
-<meta property="og:image" content="https://i.giphy.com/media/rAi32DNlsWNpItOpDr/giphy.gif"/>
 
 </head>
 
@@ -45,12 +46,12 @@
 <!-- Add the tap-place component to the scene so it has an effect -->
 <a-scene
   tap-place
-  landing-page
+  landing-page="url: https://my-8thwall-experience.com"
   xrextras-loading
   xrextras-runtime-error
   renderer="colorManagement:true"
   xrweb="
-    allowedDevices: any;
+    xallowedDevices: any;
     defaultEnvironmentFogIntensity: 0.5; 
     defaultEnvironmentFloorTexture: #groundTex; 
     defaultEnvironmentFloorColor: #FFF;
