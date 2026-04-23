@@ -24,7 +24,7 @@ https://8thwall.org/aframe-world-effects-example/
 
 ## Deployment
 
-This project contains Github Actions configuration for deployment to Github Pages, which triggers automatically by pushing the `main` branch. You can also create a production build using `npm run build` and publish using [this guide](https://8thwall.org/docs/getting-started/publishing#self-hosting-your-project).
+This project contains Github Actions configuration for deployment to Github Pages, which triggers automatically by pushing the `main` branch. You can also create a production build using `npm run build`, which outputs the production build to the `dist` folder, and publish to the web using [this guide](https://8thwall.org/docs/getting-started/publishing#self-hosting-your-project).
 
 ## Questions?
 
