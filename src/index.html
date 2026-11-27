@@ -15,17 +15,18 @@
   <meta property="og:description" content="This example allows the user to grow cacti 🌵  by tapping or clicking the ground. Showcases raycasting, spawning objects, and importing a 3D model.">
   <meta name="twitter:description" content="This example allows the user to grow cacti 🌵  by tapping or clicking the ground. Showcases raycasting, spawning objects, and importing a 3D model.">
   <meta property="og:image" content="https://8thwall.org/aframe-world-effects/assets/preview.gif"/>
+  <!-- No favicon, avoids a 404 error in the console. -->
+  <link rel="icon" href="data:,">
 
-  <script crossorigin="anonymous" src="./external/scripts/8frame-1.5.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@8thwall/xrextras@1/dist/xrextras.js" crossorigin="anonymous"></script>
+  <script crossorigin="anonymous" src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@8thwall/xrextras@2/dist/xrextras.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@8thwall/landing-page@1/dist/landing-page.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@1/dist/xr.js" crossorigin="anonymous" async="true" data-preload-chunks="slam"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@2/dist/xr.js" crossorigin="anonymous" async="true" data-preload-chunks="slam"></script>
 </head>
 
 <body>
 <script src="bundle.js"></script>
 <!-- Copyright (c) 2022 8th Wall, Inc. -->
-<!-- body.html is optional; elements will be added to your html body after app.js is loaded. -->
 
 <div class="over">
   <span id="promptText">Tap To Place Model</span>
@@ -37,7 +38,6 @@
   landing-page
   xrextras-loading
   xrextras-runtime-error
-  renderer="colorManagement:true"
   xrweb="
     allowedDevices: any;
     defaultEnvironmentFogIntensity: 0.5; 
@@ -66,7 +66,7 @@
   <a-entity
     light="
       type: directional;
-      intensity: 0.8;
+      intensity: 2.51;
       castShadow: true;
       shadowMapHeight:2048;
       shadowMapWidth:2048;
@@ -80,7 +80,7 @@
     shadow>
   </a-entity>
 
-  <a-light type="ambient" intensity="0.5"></a-light>
+  <a-light type="ambient" intensity="1.57"></a-light>
 
   <!-- Adding the cantap class allows the ground to be clicked -->
   <a-box
