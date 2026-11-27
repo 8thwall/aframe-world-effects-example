@@ -19,14 +19,9 @@
   <link rel="icon" href="data:,">
 
   <script crossorigin="anonymous" src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
-  <!-- XRExtras and the XR8 engine are built from the feat/aframe-1-8-0 branch of
-       vincentfretin/8thwall (prebuilt on the feat/aframe-1-8-0-build branch) until they are
-       released. Then: https://cdn.jsdelivr.net/npm/@8thwall/xrextras@2/dist/xrextras.js
-       SLAM isn't in the open source engine: its chunk is loaded from the published
-       @8thwall/engine-binary 1.0.0 (data-preload-chunks="slam: <url>"). -->
-  <script src="https://cdn.jsdelivr.net/gh/vincentfretin/8thwall@441ca0803b0df8b5e6821078dfceadca74cb492e/prebuilt/xrextras/xrextras.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@8thwall/xrextras@2/dist/xrextras.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@8thwall/landing-page@1/dist/landing-page.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/gh/vincentfretin/8thwall@441ca0803b0df8b5e6821078dfceadca74cb492e/prebuilt/engine/xr.js" crossorigin="anonymous" async="true" data-preload-chunks="slam: https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@1.0.0/dist/xr-slam.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@2/dist/xr.js" crossorigin="anonymous" async="true" data-preload-chunks="slam"></script>
 </head>
 
 <body>
