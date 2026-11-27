@@ -36,7 +36,7 @@ Please raise any questions on [Github Discussions](https://github.com/orgs/8thwa
 
 With R18, the all-new 8th Wall Engine features Metaversal Deployment, enabling you to create WebAR experiences once and deploy them to smartphones, tablets, computers and both AR and VR headsets. This project has a few platform-specific customizations:
 
-In **body.html**, we add the ```"allowedDevices: any"``` parameter to our ```xrweb``` component in ```<a-scene>``` 
+In **src/index.html**, we add the ```"allowedDevices: any"``` parameter to our ```xrweb``` component in ```<a-scene>``` 
 which ensures the project opens on all platforms, including desktop. Environment parameters 
 have been customized to generate an open desert space.
 
