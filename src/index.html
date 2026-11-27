@@ -15,9 +15,13 @@
   <meta property="og:description" content="This example allows the user to grow cacti 🌵  by tapping or clicking the ground. Showcases raycasting, spawning objects, and importing a 3D model.">
   <meta name="twitter:description" content="This example allows the user to grow cacti 🌵  by tapping or clicking the ground. Showcases raycasting, spawning objects, and importing a 3D model.">
   <meta property="og:image" content="https://8thwall.org/aframe-world-effects/assets/preview.gif"/>
+  <!-- No favicon, avoids a 404 error in the console. -->
+  <link rel="icon" href="data:,">
 
-  <script crossorigin="anonymous" src="./external/scripts/8frame-1.5.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@8thwall/xrextras@1/dist/xrextras.js" crossorigin="anonymous"></script>
+  <script crossorigin="anonymous" src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+  <!-- XRExtras built from 8thwall/8thwall packages/xrextras with A-Frame 1.8 support, until it is
+       released. Then: https://cdn.jsdelivr.net/npm/@8thwall/xrextras@2/dist/xrextras.js -->
+  <script src="./external/scripts/xrextras/xrextras.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@8thwall/landing-page@1/dist/landing-page.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@8thwall/engine-binary@1/dist/xr.js" crossorigin="anonymous" async="true" data-preload-chunks="slam"></script>
 </head>
